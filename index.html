@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>勉強記録アプリ</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>📚 勉強時間記録</h1>
+
+  <button onclick="toggleDarkMode()" id="darkButton">
+    🌙 ダークモード
+  </button>
+
+  <input type="text" id="subject" placeholder="科目">
+
+  <input type="number" id="minutes" placeholder="勉強時間（分）">
+
+  <button onclick="saveStudy()">保存</button>
+
+  <h2 id="todayTotal">今日の合計：0分</h2>
+
+  <h2>勉強履歴</h2>
+  <ul id="studyList"></ul>
+
+  <h2>勉強グラフ</h2>
+  <canvas id="studyChart"></canvas>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
